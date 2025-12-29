@@ -1,7 +1,9 @@
 
 
 @media  screen and (max-width:48rem){/* tablets */
-    
+    .html{
+        font-size: 10%;
+    }
     body{
        
         overflow-x: hidden;
@@ -17,14 +19,37 @@
         flex-direction: column;
         align-items: center;
         width: 50%;
+        z-index: 999;
+        background-color: blu;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        backdrop-filter: blur(1rem);
 
     }
     
     .burger{
         display: block;
         cursor: pointer;
+    }
+    #home{
+        min-height: 100vh;
+        padding-top: 4rem;
+    }
+    .homeContainer{
+        gap: 5rem;
+    }
+    .textContainer{
+        gap: 1rem;
+    }
+    .innerimage{
+        width: 25rem;
+        height: 25rem;
+    }
+    .homeButton1{
+        justify-content: space-around;
+    }
+    .homeButton2{
+        font-size: 4rem;
     }
 
 } 

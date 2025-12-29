@@ -1,48 +1,157 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-html{
-    font-size: 62.5%;
-
-
+html {
+  font-size: 62.5%;
 }
-body{
-    min-height: 100vh;
+body {
+  min-height: 100vh;
 }
-header{
-    padding-top: 2rem;
+header {
+  padding-top: 2rem;
 }
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
 }
-nav ul{
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-    list-style: none;
-}
-
-nav ul a{
-    text-decoration: none;
-    color: black;
-    letter-spacing: o.3rem;
-    font-size: 1.8rem;
-}
-nav label{
-
-    font-size: 3rem;
-}
-.burger{
-    display: none;
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  list-style: none;
 }
 
-.nav-active{
-    transform: translateX(0%);
+nav ul a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: o.3rem;
+  font-size: 1.8rem;
+}
+nav label {
+  font-size: 3rem;
+}
+.burger {
+  display: none;
 }
 
+.nav-active {
+  transform: translateX(0%);
+}
+#home {
+  padding-top: 5rem;
+  min-height: 100vh;
+}
+
+.homeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+  flex-wrap: wrap;
+}
+.innerimage {
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+ 
+  position: relative;
+
+}
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.innerimage::after,.innerimage::before{
+    
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle),transparent 70%,rgba(0, 0, 0, 0.729));
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 0.9rem;
+    animation: 3s spin linear infinite;
+}
+@keyframes spin{
+    from{
+        --angle:0deg;
+    }to{
+        --angle:360deg;
+    }
+
+}
+.innerimage::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+#profilePic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  
+}
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+#cv {
+  text-decoration: none;
+  background-color: white;
+  border: 0.2rem black solid;
+  border-radius: 5rem;
+  font-size: 1.4rem;
+  padding: 1rem;
+  color: black;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+#cInfo {
+   
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.777);
+  
+  border-radius: 5rem;
+  font-size: 1.4rem;
+  padding: 1rem;
+  color: white;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.homeButton1 {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+#cv:hover {
+  background-color: black;
+  color: white;
+}
+#cInfo:hover {
+  background-color: black;
+}
+.homeButton2 {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 3rem;
+}
+.homeButton2 a {
+  color: black;
+}
+
+#linkedin:hover {
+  scale: 1.2;
+}
+#github:hover {
+  scale: 1.2;
+}
