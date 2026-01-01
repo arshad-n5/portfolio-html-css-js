@@ -339,6 +339,7 @@ min-height: 100vh;
   width: 70rem;
   height: 10rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   font-size: 3rem;

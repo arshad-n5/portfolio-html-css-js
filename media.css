@@ -1,5 +1,4 @@
 @media screen and (max-width: 48rem) {
- 
   .html {
     font-size: 10%;
   }
@@ -67,7 +66,7 @@
     width: 20rem;
     height: auto;
   }
-  #skills{
+  #skills {
     padding: 1.2rem;
   }
   .skillContainer {
@@ -77,8 +76,16 @@
     width: 50rem;
     height: 40rem;
   }
-  .projectContainer{
+  .projectContainer {
     gap: 2rem;
+  }
+  #contacts{
+    padding: 3rem;
+  }
+  .contactContainer {
+    width: 35rem;
+    height: 20rem;
+    font-size: 2rem;
   }
 }
 @media screen and(max-width:68rem) {
