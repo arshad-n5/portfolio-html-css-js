@@ -6,6 +6,7 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   min-height: 100vh;
@@ -325,7 +326,7 @@ min-height: 100vh;
 }
 
 #contacts{
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -348,4 +349,25 @@ min-height: 100vh;
 .contactContainer a{
   color: black;
   text-decoration: none;
+}
+footer{
+  padding: 3rem;
+}
+.footerLink{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 3rem;
+
+}
+.footerLink a{
+  color: black;
+  text-decoration: none;
+  font-size: 3rem;
+
+}
+.rights{
+  padding: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
 }

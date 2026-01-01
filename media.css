@@ -76,6 +76,10 @@
     width: 50rem;
     height: 40rem;
   }
+  .skillContainerContentfl{
+    flex-direction: column;
+    gap: 2rem;
+  }
   .projectContainer {
     gap: 2rem;
   }
@@ -86,6 +90,9 @@
     width: 35rem;
     height: 20rem;
     font-size: 2rem;
+  }
+  .footerLink{
+    flex-direction: column;
   }
 }
 @media screen and(max-width:68rem) {
